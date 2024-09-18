@@ -34,8 +34,7 @@ const Hero = () => {
                         />
                         <group>
                             <Target position={sizes.targetPosition} />
-                            <ReactLogo/>
-                        </group>
+                                                   </group>
                         <ambientLight intensity={1} />
                         <directionalLight intensity={0.5} position={[10, 10, 10]} />
                     </Suspense>
