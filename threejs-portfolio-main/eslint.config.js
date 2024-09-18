@@ -4,6 +4,7 @@ import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import reactThree from '@react-three/eslint-plugin'
+import { ReactThreeFiber } from '@react-three/fiber'
 
 export default [
   { ignores: ['dist'] },
@@ -24,6 +25,7 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
       'react-three': reactThree,
+      '@react-three': ReactThreeFiber,
     },
     rules: {
       ...js.configs.recommended.rules,
