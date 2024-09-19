@@ -1,4 +1,4 @@
-import { PerspectiveCamera } from '@react-three/drei'
+import { PerspectiveCamera, Ring } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import HackerRoom from '../components/HackerRoom.jsx'
@@ -8,28 +8,29 @@ import { calculateSizes } from '../constants/index.js'
 import Target from '../components/Target.jsx'
 import ReactLogo from '../components/ReactLogo.jsx'
 import Cube from '../components/Cube.jsx'
+import Rings from '../components/Rings.jsx'
+
 
 
 const Hero = () => {
-    const isSmall = useMediaQuery({ query: '(max-width: 440px)' })
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
-    const isTablet = useMediaQuery({ query: '(min-widht: 768px ,max-width: 1024px)' })
+    const isSmall = useMediaQuery({ maxWidth: 440 });
+    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
-    const sizes = calculateSizes(isSmall, isMobile, isTablet)
+    const sizes = calculateSizes(isSmall, isMobile, isTablet);
     return (
-        <section className='min-h-screen w-full flex flex-col relative'>
-            <div className='w-full mx-auto flex flex-col sm:mt-36 nt-20 c-space gap-3'>
-                <p className='sm:text-3xl text-2xl font-medium text-orange-300 text-center font-generalsans'>Hi,<span className='glow'>🌞</span> I'm Sunny  <span className='waving-hand'>👋</span></p>
+        <section className="min-h-screen w-full flex flex-col relative" id="home">
+        <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+                        <p className='sm:text-3xl text-2xl font-medium text-orange-300 text-center font-generalsans'>Hi,<span className='glow'>🌞</span> I'm Sunny  <span className='waving-hand'>👋</span></p>
                 className='glowing-sun'
-                <p className='hero_tag text-gray_gradient'>My project</p>
+                <p className="hero_tag text-gray_gradient">Building Products & Brands</p>
             </div>
-            <div className='w-full h-full absolute inset-0'>
-                {/* <Leva /> */}
-                <Canvas className='w-full h-full'>
-                    <Suspense fallback={CanvasLoader}>
+            <div className="w-full h-full absolute inset-0">
+        <Canvas className="w-full h-full">
+          <Suspense fallback={<CanvasLoader />}>
 
 
-                        <PerspectiveCamera makeDefault position={[0, 0, 20]} />
+          <PerspectiveCamera makeDefault position={[0, 0, 30]} />
                         <HackerRoom
                             position={sizes.deskPosition}
                             rotation={[0, -Math.PI, 0]}
@@ -39,6 +40,7 @@ const Hero = () => {
                             <Target position={sizes.targetPosition} />
                             <ReactLogo position={sizes.reactLogoPosition} />
                             <Cube position={sizes.cubePosition} />
+                            <Rings position={sizes.ringPosition} />
                             
                                                    </group>
                         <ambientLight intensity={1} />
