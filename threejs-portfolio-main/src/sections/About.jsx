@@ -27,8 +27,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Stanislava</p>
               <p className="grid-subtext">
-                With 12 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
-                and responsive websites.
+                I&apos;m a Front-End Developer with a passion for creating beautiful and functional user experiences.
+                I&apos;m constantly learning and improving my skills to stay up-to-date with the latest technologies.
+      
               </p>
             </div>
           </div>
@@ -41,8 +42,8 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
+                I have experience with a variety of technologies, including HTML, CSS, JavaScript, React, and more.
+                I&apos;m always excited to learn new things and expand my skill set.
               </p>
             </div>
           </div>
@@ -67,7 +68,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
               <p className="grid-subtext">I&apos;m based in Burgas,Bulgaria and open to remote work worldwide.</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <a href="#contact" className="w-fit">
+    <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+  </a>
             </div>
           </div>
         </div>
@@ -95,7 +98,7 @@ const About = () => {
             />
 
             <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
+              <p className="grid-subtext text-center">Connect me</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">miss_stanislava@yahoo.com</p>

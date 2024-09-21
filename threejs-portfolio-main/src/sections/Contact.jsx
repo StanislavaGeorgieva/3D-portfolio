@@ -28,12 +28,12 @@ const Contact = () => {
             </p>
             <p className="text-white-600 flex items-center">
               <ArrowIcon />
-              If you want to see my code, check out my 
-              <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="link-github ml-1">GitHub</a>.
+              If you’d like to see my code, check out my
+              <a href="https://github.com/StanislavaGeorgieva" target="_blank" rel="noopener noreferrer" className="link-github ml-1">GitHub</a>.
             </p>
             <p className="text-white-600 flex items-center">
               <ArrowIcon />
-              If you'd like to take a look at my resume, you can 
+              If you’d like to take a look at my resume, you can
               <a href="/assets/mycv.pdf" download className="link-download ml-1">download it here</a>.
             </p>
           </div>
