@@ -211,3 +211,35 @@ body {
     text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
   }
 }
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.waving-hand {
+  display: inline-block;
+  animation: wave 2s infinite;
+  transform-origin: 70% 70%;
+}
+
+.glow {
+  display: inline-block;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  color: yellow;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px orange, 0 0 40px orange;
+  }
+  to {
+    text-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px orange, 0 0 50px orange;
+  }
+}

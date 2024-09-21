@@ -24,8 +24,12 @@ const Hero = () => {
     return (
         <section className="min-h-screen w-full flex flex-col relative" id="home">
         <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
-                        <p className='sm:text-3xl text-2xl font-medium text-orange-300 text-center font-generalsans'>Hello!<span className='glow'>🌞</span> I'm Sunny  <span className='waving-hand'>👋</span></p>
-                        <h1 className="hero_title text-xl sm:text-xl text-center font-bold text-white">Front End Developer</h1>
+        <p className='sm:text-5xl text-7xl font-bold text-orange-300 text-center font-generalsans'>
+  Hello!
+  <span className='waving-hand'>👋</span> I'm Sunny
+  <span className='glow'>🌞</span>
+</p>
+<h1 className="hero_title text-6xl sm:text-4xl text-center font-bold text-white">I'm a Front End Developer</h1>
             </div>
             <div className="w-full h-full absolute inset-0">
         <Canvas className="w-full h-full">
