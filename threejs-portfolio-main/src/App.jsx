@@ -1,5 +1,6 @@
 import About from './sections/About.jsx';
 import Contact from './sections/Contact.jsx';
+import Footer from './sections/Footer.jsx';
 import Hero from './sections/Hero.jsx';
 import Navbar from './sections/Navbar.jsx';
 import Project from './sections/Project.jsx';
@@ -14,6 +15,7 @@ const App = () => {
       <Project />
       
       <Contact />
+      <Footer />
     </main>
   );
 };
