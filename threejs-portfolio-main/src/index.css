@@ -243,3 +243,50 @@ body {
     text-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px orange, 0 0 50px orange;
   }
 }
+
+.neon-arrow {
+  color: #00f; /* Neon blue color */
+  filter: drop-shadow(0 0 5px #00f)
+          drop-shadow(0 0 10px #00f)
+          drop-shadow(0 0 20px #00f);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.link-linkedin {
+  color: #0077B5; /* Blue for LinkedIn */
+  transition: color 0.3s ease;
+}
+
+.link-linkedin:hover {
+  color: #38a169; /* Change to green on hover */
+}
+
+.link-github {
+  color: #333; /* Dark gray for GitHub */
+  transition: color 0.3s ease;
+}
+
+.link-github:hover {
+  color: #38a169; /* Change to green on hover */
+}
+
+.link-download {
+  color: #38a169; /* Green for download */
+  transition: color 0.3s ease;
+}
+
+.link-download:hover {
+  color: #0077B5; /* Change to blue on hover */
+}
