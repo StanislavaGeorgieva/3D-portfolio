@@ -64,14 +64,7 @@ export const myProjects = [
       'With features like real-time updates, notifications, and reminders, Event Calendar is the ultimate tool for organizing events of any size. Built with React.js, TailwindCSS, and Firebase, it offers a seamless user experience.',
       href: 'https://github.com/Event-calendar-Final-Project/Event-Calendar-Final-Project-A58', 
     texture: '/textures/project/project1.png',
-    /* logo: , */
-    logoStyle: {
-      backgroundColor: '#2A1816',
-      border: '0.2px solid #36201D',
-      boxShadow: '0px 0px 60px 0px #AA3C304D',
-    },
-    spotlight: '/assets/spotlight1.png',
-    tags: [
+     tags: [
       {
         id: 1,
         name: 'React.js',
@@ -158,10 +151,8 @@ export const myProjects = [
     title: 'Portfolio - Personal Website',
     desc: 'Portfolio is a modern personal website template that showcases your skills, projects, and experience. It offers a clean and professional design, making it easy for visitors to learn more about you and your work.',
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
+      'With features like project galleries, contact forms, and social media links, Portfolio provides a seamless experience for users to explore your portfolio and get in touch. Built with Vanilla JS, CSS, and HTML, it offers a responsive and user-friendly interface.',
     href: 'https://github.com/StanislavaGeorgieva/3D-portfolio',
-    texture: '/textures/project/portfolio2.png',
-    spotlight: '/assets/spotlight4.png',
     tags: [
       {
         id: 1,
@@ -187,7 +178,6 @@ export const myProjects = [
       'Original and beautiful design, with a focus on user experience.',
     href: 'https://github.com/StanislavaGeorgieva/Mauritius',
     texture: '/textures/project/Mauritius.png',
-    spotlight: '/assets/spotlight5.png',
     tags: [
       {
         id: 1,
