@@ -24,7 +24,7 @@ const Contact = () => {
             <p className="text-white-600 flex items-center">
               <ArrowIcon />
               If you want to reach me, here's my 
-              <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="link-linkedin ml-1">LinkedIn</a>.
+              <a href="https://www.linkedin.com/in/stanislava-georgieva-71686128a/" target="_blank" rel="noopener noreferrer" className="link-linkedin ml-1">LinkedIn</a>.
             </p>
             <p className="text-white-600 flex items-center">
               <ArrowIcon />
