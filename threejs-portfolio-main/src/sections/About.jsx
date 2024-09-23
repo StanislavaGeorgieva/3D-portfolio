@@ -62,7 +62,10 @@ const About = () => {
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                 backgroundImageUrl={'//unpkg.com/three-globe/example/img/night-sky.png'}
-                labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
+                labelsData={[
+                  { lat: 42.4975, lng: 27.4746, text: 'Burgas, Bulgaria', color: 'white', size: 15 }
+                ]}
+                
               />
             </div>
             <div>
@@ -98,7 +101,7 @@ const About = () => {
             />
 
             <div className="space-y-2">
-              <p className="grid-subtext text-center">Connect me</p>
+              <p className="grid-subtext text-center">Contact me at</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">miss_stanislava@yahoo.com</p>

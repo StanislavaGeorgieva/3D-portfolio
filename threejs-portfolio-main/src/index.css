@@ -9,7 +9,7 @@
 }
 
 body {
-  background: url('assets/sky.png') no-repeat center center fixed;
+  background: url('/assets/sky1.jpg') no-repeat center center fixed;
   background-size: cover;
   font-family: 'General Sans', sans-serif;
 }
