@@ -29,15 +29,19 @@ const Contact = () => {
             <p className="text-white-600 flex items-center">
               <ArrowIcon />
               If you’d like to take a look at my resume, you can
-              <a href="/assets/mycv.pdf" download className="link-download ml-1">download it here</a>.
+              <a href="/assets/my-cv.pdf" download className="link-download ml-1">download it here</a>.
             </p>
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <a href="mailto:miss_stanislava@yahoo.com">
-            <img src="assets/white-icon.png" alt="icon" className="w-full sm:h-[276px] h-fit object-contain rounded-full" />
-          </a>
-        </div>
+  <a href="mailto:miss_stanislava@yahoo.com">
+    <img 
+      src="assets/white-icon.png" 
+      alt="icon" 
+      className="w-full h-[150px] sm:h-[276px] object-contain rounded-full"
+    />
+  </a>
+</div>
       </div>
     </section>
   );

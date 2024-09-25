@@ -1,20 +1,27 @@
-import React, { useState } from 'react'
-import Globe from 'react-globe.gl'
-import Button from '../components/Button'
-
-
+import React, { useState, useEffect } from 'react';
+import Globe from 'react-globe.gl';
+import Button from '../components/Button';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
+  const [morphed, setMorphed] = useState(false);
+
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(' miss_stanislava@yahoo.com');
+    navigator.clipboard.writeText('miss_stanislava@yahoo.com');
     setHasCopied(true);
-
     setTimeout(() => {
       setHasCopied(false);
     }, 2000);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setMorphed(prev => !prev); 
+    }, 3000); 
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="c-space my-20" id="about">
@@ -22,19 +29,21 @@ const About = () => {
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid20.png" alt="grid-20" className="w-full sm:h-[276px] h-fit object-contain" />
-
+            <img
+              src={morphed ? "assets/grid20.png" : "assets/6.jpg"}
+              alt="grid-20"
+              className={`w-full sm:h-[276px] h-fit object-contain transition-all duration-1000`} 
+            />
             <div>
               <p className="grid-headtext">Hi, I’m Stanislava</p>
               <p className="grid-subtext">
-                I&apos;m a Front-End Developer with a passion for creating beautiful and functional user experiences.
-                I&apos;m constantly learning and improving my skills to stay up-to-date with the latest technologies.
-      
+                I'm a Front-End Developer with a passion for creating beautiful and functional user experiences — basically, making the internet look good while keeping it useful! I'm constantly learning and leveling up my skills to stay on top of the latest tech trends, because who wants to fall behind in the race of shiny new frameworks?
               </p>
             </div>
           </div>
         </div>
 
+        {/* Other sections remain the same */}
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src="assets/techstack.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
@@ -42,13 +51,13 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I have experience with a variety of technologies, including HTML, CSS, JavaScript, React, and more.
-                I&apos;m always excited to learn new things and expand my skill set.
+                I have experience with a variety of technologies, including HTML, CSS, JavaScript, React, and more — basically, if it's got a tag or a bracket, I've probably tangled with it. I'm always excited to learn new things and expand my skill set, because who doesn't love adding more acronyms to their résumé?
               </p>
             </div>
           </div>
         </div>
 
+        {/* Globe Section */}
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
@@ -65,33 +74,32 @@ const About = () => {
                 labelsData={[
                   { lat: 42.4975, lng: 27.4746, text: 'Burgas, Bulgaria', color: 'white', size: 15 }
                 ]}
-                
               />
             </div>
             <div>
               <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
-              <p className="grid-subtext">I&apos;m based in Burgas,Bulgaria and open to remote work worldwide.</p>
+              <p className="grid-subtext">I&apos;m based in Burgas, Bulgaria (yes, that's a real place!), and I'm open to remote work worldwide. Go ahead, take a peek at the globe — my hometown's chilling by the Black Sea, probably sunbathing!</p>
               <a href="#contact" className="w-fit">
-    <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
-  </a>
+                <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              </a>
             </div>
           </div>
         </div>
 
+        {/* Passion for Coding Section */}
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <img src="assets/hacker.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
-
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+                I love solving problems and building things through code. Programming isn’t just my profession—it’s my passion (and maybe a borderline obsession). I enjoy exploring new technologies and constantly leveling up my skills, because there’s always another bug waiting to be squashed or a shiny new tool to try.
               </p>
             </div>
           </div>
         </div>
 
+        {/* Contact Section */}
         <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
             <img
@@ -99,7 +107,6 @@ const About = () => {
               alt="grid-4"
               className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
             />
-
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact me at</p>
               <div className="copy-container" onClick={handleCopy}>
@@ -110,9 +117,8 @@ const About = () => {
           </div>
         </div>
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

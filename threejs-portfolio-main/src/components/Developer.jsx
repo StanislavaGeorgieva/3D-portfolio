@@ -6,19 +6,19 @@ const Developer = ({ animationsName = 'idle', ...props }) => {
   const group = useRef();
   const { nodes, materials } = useGLTF('/models/animations/developer.glb');
 
-  // Load all animations
+
   const { animations: idleAnimation } = useFBX('/models/animations/idle.fbx');
   const { animations: saluteAnimation } = useFBX('/models/animations/salute.fbx');
   const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
   const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
 
-  // Assign names to animations
+
   idleAnimation[0].name = 'idle';
   saluteAnimation[0].name = 'salute';
-  clappingAnimation[0].name = 'clapping';  // Fix the typo from 'claaping'
+  clappingAnimation[0].name = 'clapping';  
   victoryAnimation[0].name = 'victory';
 
-  // Use all animations
+
   const { actions } = useAnimations(
     [idleAnimation[0], saluteAnimation[0], clappingAnimation[0], victoryAnimation[0]], 
     group

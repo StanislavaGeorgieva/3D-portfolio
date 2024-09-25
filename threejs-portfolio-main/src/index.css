@@ -199,7 +199,7 @@ body {
 
 .glow {
   animation: glow 1.5s infinite alternate;
-  color: #FFD700; /* Bright yellow color */
+  color: #FFD700;
   text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700;
 }
 
@@ -245,7 +245,7 @@ body {
 }
 
 .neon-arrow {
-  color: #00f; /* Neon blue color */
+  color: #00f;
   filter: drop-shadow(0 0 5px #00f)
           drop-shadow(0 0 10px #00f)
           drop-shadow(0 0 20px #00f);
@@ -265,28 +265,39 @@ body {
 }
 
 .link-linkedin {
-  color: #0077B5; /* Blue for LinkedIn */
+  color: #0077B5; 
   transition: color 0.3s ease;
 }
 
 .link-linkedin:hover {
-  color: #38a169; /* Change to green on hover */
+  color: #38a169; 
 }
 
 .link-github {
-  color: #333; /* Dark gray for GitHub */
+  color: #333; 
   transition: color 0.3s ease;
 }
 
 .link-github:hover {
-  color: #38a169; /* Change to green on hover */
+  color: #38a169; 
 }
 
 .link-download {
-  color: #38a169; /* Green for download */
+  color: #38a169; 
   transition: color 0.3s ease;
 }
 
 .link-download:hover {
-  color: #0077B5; /* Change to blue on hover */
+  color: #0077B5; 
+}
+
+
+.morph-image {
+  transition: opacity 1s ease-in-out; 
+  position: absolute;
+}
+
+.grid-container {
+  position: relative;
+  overflow: hidden; 
 }
