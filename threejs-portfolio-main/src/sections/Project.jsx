@@ -59,8 +59,9 @@ const Projects = () => {
   href={currentProject.href}
   target="_blank"
   rel="noreferrer">
-  <p>Check Out My GitHub</p>
+  <p>Check it Out </p>
 </a>
+
           </div>
 
           <div className="flex justify-between items-center mt-7">

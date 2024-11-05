@@ -30,9 +30,9 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src={morphed ? "assets/grid20.png" : "assets/6.jpg"}
+              src={morphed ? "assets/space1.jpg" : "assets/pic0.jpg"}
               alt="grid-20"
-              className={`w-full sm:h-[276px] h-fit object-contain transition-all duration-1000`} 
+              className={`w-full sm:h-[276px] h-fit object-contain transition-all duration-1000 ${morphed ? 'morphing-img' : ''}`} 
             />
             <div>
               <p className="grid-headtext">Hi, I’m Stanislava</p>
@@ -42,6 +42,7 @@ const About = () => {
             </div>
           </div>
         </div>
+      
 
         {/* Other sections remain the same */}
         <div className="col-span-1 xl:row-span-3">

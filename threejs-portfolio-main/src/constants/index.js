@@ -24,6 +24,57 @@ export const navLinks = [
 
 export const myProjects = [
   {
+    title: 'Brainwave - present AI generator',
+    desc: 'Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.',
+    subdesc:
+      'Brainwave is a modern AI generator ',
+      href: 'https://brainwave-stanslava-georgieva.vercel.app/', 
+    texture: '/textures/project/project1.png',
+     tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+
+    ],
+  },
+  {
+    title: 'Iphone 16 - Product Page',
+    desc: 'Iphone 16 is a modern product page that showcases the latest features and specifications of the Iphone 16. It offers a clean and professional design, making it easy for users to learn more about the product and make a purchase.',
+    subdesc:
+      'With features like 3d product visualization, product galleries, and pricing information, Iphone 16 provides a seamless experience for users to explore the product and make an informed decision. Built with React.js, Three.js, and GSAP, it offers a modern and interactive interface.',
+      href: 'https://my-phone-project.website/', 
+    texture: '/textures/project/project1.png',
+     tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'GSAP',
+        path: '/assets/gsap-greensock.svg',
+      },
+      {
+        id: 3,
+        name: 'Three.js',
+        path: '/assets/threejs.png',
+      },
+    ],
+  },
+  {
     title: 'Event Calendar - Scheduling App',
     desc: 'Event Calendar is a powerful scheduling app that simplifies event planning and management. It allows users to create, share, and manage events with ease, ensuring that every detail is accounted for.',
     subdesc:
